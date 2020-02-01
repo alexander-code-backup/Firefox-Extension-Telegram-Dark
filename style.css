@@ -1,0 +1,62 @@
+:root {
+    --color-background: #222222;
+    --color-background-shadow: #4a4a4a;
+    --color-dark: #1F232A;
+    --color-text: #efefef;
+    --color-bar: #1a1a1a;
+    --color-textdark: #777474;
+    --color-button: #404040;
+    --color-icon: #E1E1E1;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-dark) var(--color-background-shadow);
+    color: var(--color-text) !important;
+}
+
+body, .im_page_wrap, .tg_head_split, .dropdown.open .tg_head_btn, .tg_head_btn:hover, .dropdown-menu, .modal-content, .md_modal_head, .md_modal_section_splitter{
+    background-color: var(--color-background) !important;
+}
+
+.im_dialogs_search_field, .form-control, .btn-md:hover, .md-input, .error_modal_details textarea, .im_message_unread_split{
+    background-color: var(--color-bar) !important;
+}
+
+.im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected, .tg_head_logo_dropdown .dropdown-menu > li > a:hover, .contacts_modal_members_list .active a.contacts_modal_contact, .contacts_modal_members_list .active a.contacts_modal_contact:hover, .contacts_modal_members_list a.contacts_modal_contact:hover, .md_modal_split_action, .tg_head_peer_dropdown .dropdown-menu > li > a:hover, .im_history_select_active .im_message_outer_wrap:hover, .im_message_selected .im_message_outer_wrap {
+    background-color: var(--color-background-shadow) !important;
+}
+
+.im_page_wrap, .tg_head_split {
+    max-width: inherit !important;
+}
+
+.im_dialogs_col_wrap {
+    padding-bottom: 100% !important;
+    border-right: inherit !important;
+}
+
+.im_dialogs_search_field {
+    border-radius: 18px;
+}
+
+.im_page_wrap {
+    border-left: inherit !important;
+}
+
+.tg_head_logo_dropdown .dropdown-menu {
+    border: inherit !important;
+    border-left-color: inherit !important;
+    border-right-color: inherit !important;
+}
+
+.im_message_unread_split {
+    font-size: 12.5px;
+    border-radius: 7.5px;
+    padding: 5px 12px 6px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 560px;
+    margin: 0 auto;
+}
