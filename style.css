@@ -15,7 +15,7 @@
     color: var(--color-text) !important;
 }
 
-body, .im_page_wrap, .tg_head_split, .dropdown.open .tg_head_btn, .tg_head_btn:hover, .dropdown-menu, .modal-content, .md_modal_head, .md_modal_section_splitter{
+body, .im_page_wrap, .tg_head_split, .dropdown.open .tg_head_btn, .tg_head_btn:hover, .dropdown-menu, .modal-content, .md_modal_head, .md_modal_section_splitter, .im_message_mymention{
     background-color: var(--color-background) !important;
 }
 
@@ -32,7 +32,6 @@ body, .im_page_wrap, .tg_head_split, .dropdown.open .tg_head_btn, .tg_head_btn:h
 }
 
 .im_dialogs_col_wrap {
-    padding-bottom: 100% !important;
     border-right: inherit !important;
 }
 
@@ -59,4 +58,12 @@ body, .im_page_wrap, .tg_head_split, .dropdown.open .tg_head_btn, .tg_head_btn:h
     justify-content: center;
     max-width: 560px;
     margin: 0 auto;
+}
+.im_page_wrap {
+    background: inherit !important;
+    box-shadow: initial !important;
+    border-radius: initial !important;
+    border-left: initial !important;
+    border-right: initial !important;
+    border-bottom: initial !important;
 }
