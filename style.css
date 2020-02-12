@@ -15,15 +15,15 @@
     color: var(--color-text) !important;
 }
 
-body, .im_page_wrap, .tg_head_split, .dropdown.open .tg_head_btn, .tg_head_btn:hover, .dropdown-menu, .modal-content, .md_modal_head, .md_modal_section_splitter, .im_message_mymention{
+body, .im_page_wrap, .tg_head_split, .dropdown.open .tg_head_btn, .tg_head_btn:hover, .dropdown-menu, .modal-content, .md_modal_head, .md_modal_section_splitter, .im_message_mymention, .login_head_bg, html {
     background-color: var(--color-background) !important;
 }
 
-.im_dialogs_search_field, .form-control, .btn-md:hover, .md-input, .error_modal_details textarea, .im_message_unread_split{
+.im_dialogs_search_field, .form-control, .btn-md:hover, .md-input, .error_modal_details textarea, .im_message_unread_split, .login_form_wrap {
     background-color: var(--color-bar) !important;
 }
 
-.im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected, .tg_head_logo_dropdown .dropdown-menu > li > a:hover, .contacts_modal_members_list .active a.contacts_modal_contact, .contacts_modal_members_list .active a.contacts_modal_contact:hover, .contacts_modal_members_list a.contacts_modal_contact:hover, .md_modal_split_action, .tg_head_peer_dropdown .dropdown-menu > li > a:hover, .im_history_select_active .im_message_outer_wrap:hover, .im_message_selected .im_message_outer_wrap {
+.im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected, .tg_head_logo_dropdown .dropdown-menu > li > a:hover, .contacts_modal_members_list .active a.contacts_modal_contact, .contacts_modal_members_list .active a.contacts_modal_contact:hover, .contacts_modal_members_list a.contacts_modal_contact:hover, .md_modal_split_action, .tg_head_peer_dropdown .dropdown-menu > li > a:hover, .im_history_select_active .im_message_outer_wrap:hover, .im_message_selected .im_message_outer_wrap, .countries_scrollable_wrap a.countries_modal_country:hover {
     background-color: var(--color-background-shadow) !important;
 }
 

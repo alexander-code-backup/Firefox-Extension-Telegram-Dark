@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Telegram Dark",
   "author": "Johnendz",
-  "version": "1.0",
+  "version": "1.1",
 
   "content_scripts": [
     {
