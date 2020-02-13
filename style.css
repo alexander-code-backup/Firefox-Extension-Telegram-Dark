@@ -19,11 +19,11 @@ body, .im_page_wrap, .tg_head_split, .dropdown.open .tg_head_btn, .tg_head_btn:h
     background-color: var(--color-background) !important;
 }
 
-.im_dialogs_search_field, .form-control, .btn-md:hover, .md-input, .error_modal_details textarea, .im_message_unread_split, .login_form_wrap {
+.im_dialogs_search_field, .form-control, .btn-md:hover, .md-input, .error_modal_details textarea, .im_message_unread_split, .login_form_wrap, .composer_dropdown_wrap, .composer_emoji_tooltip {
     background-color: var(--color-bar) !important;
 }
 
-.im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected, .tg_head_logo_dropdown .dropdown-menu > li > a:hover, .contacts_modal_members_list .active a.contacts_modal_contact, .contacts_modal_members_list .active a.contacts_modal_contact:hover, .contacts_modal_members_list a.contacts_modal_contact:hover, .md_modal_split_action, .tg_head_peer_dropdown .dropdown-menu > li > a:hover, .im_history_select_active .im_message_outer_wrap:hover, .im_message_selected .im_message_outer_wrap, .countries_scrollable_wrap a.countries_modal_country:hover {
+.im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected, .tg_head_logo_dropdown .dropdown-menu > li > a:hover, .contacts_modal_members_list .active a.contacts_modal_contact, .contacts_modal_members_list .active a.contacts_modal_contact:hover, .contacts_modal_members_list a.contacts_modal_contact:hover, .md_modal_split_action, .tg_head_peer_dropdown .dropdown-menu > li > a:hover, .im_history_select_active .im_message_outer_wrap:hover, .im_message_selected .im_message_outer_wrap, .countries_scrollable_wrap a.countries_modal_country:hover, a.composer_emoji_btn:hover, .composer_dropdown li a:hover, .composer_dropdown li.composer_autocomplete_option_active a {
     background-color: var(--color-background-shadow) !important;
 }
 
@@ -66,4 +66,10 @@ body, .im_page_wrap, .tg_head_split, .dropdown.open .tg_head_btn, .tg_head_btn:h
     border-left: initial !important;
     border-right: initial !important;
     border-bottom: initial !important;
+}
+.im_message_wrap, .im_send_panel_wrap, .im_send_form {
+    max-width: inherit !important;
+}
+.im_record_bg {
+    background: inherit !important;
 }
