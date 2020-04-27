@@ -1,75 +1,125 @@
 :root {
     --color-background: #222222;
     --color-background-shadow: #4a4a4a;
-    --color-dark: #1F232A;
+    --color-background-dark: #1a1a1a;
     --color-text: #efefef;
-    --color-bar: #1a1a1a;
-    --color-textdark: #777474;
-    --color-button: #404040;
-    --color-icon: #E1E1E1;
+    --color-text-shadow: #b3b3b3;
+    --color-icon: #919191;
 }
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: var(--color-dark) var(--color-background-shadow);
-    color: var(--color-text) !important;
+    scrollbar-color: #1F232A #4a4a4a;
 }
 
-body, .im_page_wrap, .tg_head_split, .dropdown.open .tg_head_btn, .tg_head_btn:hover, .dropdown-menu, .modal-content, .md_modal_head, .md_modal_section_splitter, .im_message_mymention, .login_head_bg, html {
-    background-color: var(--color-background) !important;
+html, body {
+    background: var(--color-background) !important;
 }
 
-.im_dialogs_search_field, .form-control, .btn-md:hover, .md-input, .error_modal_details textarea, .im_message_unread_split, .login_form_wrap, .composer_dropdown_wrap, .composer_emoji_tooltip {
-    background-color: var(--color-bar) !important;
-}
-
-.im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected, .tg_head_logo_dropdown .dropdown-menu > li > a:hover, .contacts_modal_members_list .active a.contacts_modal_contact, .contacts_modal_members_list .active a.contacts_modal_contact:hover, .contacts_modal_members_list a.contacts_modal_contact:hover, .md_modal_split_action, .tg_head_peer_dropdown .dropdown-menu > li > a:hover, .im_history_select_active .im_message_outer_wrap:hover, .im_message_selected .im_message_outer_wrap, .countries_scrollable_wrap a.countries_modal_country:hover, a.composer_emoji_btn:hover, .composer_dropdown li a:hover, .composer_dropdown li.composer_autocomplete_option_active a {
-    background-color: var(--color-background-shadow) !important;
-}
+/* estilo da pagina */
 
 .im_page_wrap, .tg_head_split {
     max-width: inherit !important;
 }
-
-.im_dialogs_col_wrap {
-    border-right: inherit !important;
+.im_page_wrap, .tg_head_split, .login_head_bg {
+    background: var(--color-background) !important;
 }
-
-.im_dialogs_search_field {
-    border-radius: 18px;
-}
-
 .im_page_wrap {
-    border-left: inherit !important;
+	border: inherit !important;
 }
+.login_form_wrap, .md-input {
+	background-color: var(--color-background-dark) !important;
+}
+.login_form_head, .login_phone_head {
+	color: var(--color-text) !important;
+}
+.md-input {
+	color: var(--color-text-shadow) !important;
+}
+/* fim estilo da pagina */
 
+/* estilo da lista do menu */
+
+.dropdown.open .tg_head_btn, .tg_head_btn:hover, .dropdown-menu, .modal-content, .md_modal_head, .md_modal_section_splitter {
+    background-color: var(--color-background) !important;
+}
 .tg_head_logo_dropdown .dropdown-menu {
     border: inherit !important;
     border-left-color: inherit !important;
     border-right-color: inherit !important;
 }
+.tg_head_logo_dropdown .dropdown-menu > li > a:hover {
+	background-color: var(--color-background-shadow) !important;
+}
+.im_dialogs_search_field, .form-control {
+    background-color: var(--color-background-dark) !important;
+}
+.form-control {
+	color: var(--color-text) !important;
+}
+/* fim estilo da lista de menu */
 
-.im_message_unread_split {
-    font-size: 12.5px;
-    border-radius: 7.5px;
-    padding: 5px 12px 6px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    max-width: 560px;
-    margin: 0 auto;
+/* estilo da lista de mensagens */
+
+.im_dialogs_search_field {
+    border-radius: 18px;
 }
-.im_page_wrap {
-    background: inherit !important;
-    box-shadow: initial !important;
-    border-radius: initial !important;
-    border-left: initial !important;
-    border-right: initial !important;
-    border-bottom: initial !important;
+.dropdown-menu *, .im_dialog_peer {
+	color: var(--color-text) !important;
 }
-.im_message_wrap, .im_send_panel_wrap, .im_send_form {
-    max-width: inherit !important;
+.im_dialogs_col_wrap {
+    border-right: 2px solid var(--color-background-dark) !important;
+}
+.im_page_wrap.clearfix {
+	border-top: 2px solid var(--color-background-dark) !important;
+}
+.im_dialogs_scrollable_wrap .active a.im_dialog {
+	background-color: var(--color-background-dark) !important;
+	border-radius: 8px;
+}
+.footer_empty {
+	display: none !important;
+}
+.im_dialogs_scrollable_wrap a.im_dialog_searchpeer, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer:hover, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer_selected, .im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected {
+	background: var(--color-background-shadow) !important;
+}
+.im_dialog_message, a.im_dialog:hover .im_short_message_text, a.im_dialog_selected .im_short_message_text {
+	color: var(--color-text-shadow) !important;
+}
+.im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected {
+	border-radius: 8px;
+}
+/* fim estilo da lista de mensagens */
+
+/* estilo do chat */
+
+.im_message_text {
+	color: var(--color-text) !important;
+}
+.im_message_selected .im_message_outer_wrap, .btn-md:hover {
+	background-color: var(--color-background-dark) !important;
+}
+.im_history_select_active .im_message_outer_wrap:hover, .tg_head_peer_dropdown .dropdown-menu > li > a:hover {
+	background-color: var(--color-background-shadow) !important;
 }
 .im_record_bg {
-    background: inherit !important;
+	background: var(--color-background) !important;
 }
+.tg_head_peer_dropdown .dropdown-menu {
+	max-width: inherit !important;
+}
+/* fim do estilo do chat */
+
+/* estilo de informações de contato ou configurações */
+
+.md_modal_section_link, .md_modal_section_param_name, .tg_radios_wrap *, .md_modal_section_description.changelog_version_changes {
+	color: var(--color-text-shadow) !important;
+}
+.md_modal_section_param_value, .tg_checkbox_label, .md_modal_section_link:hover, .confirm_modal_description * {
+	color: var(--color-text) !important;
+}
+.md_modal_split_action {
+	background: var(--color-background) !important;
+	box-shadow: initial !important;
+}
+/* fim do estilo de informações de contato ou configurações */
