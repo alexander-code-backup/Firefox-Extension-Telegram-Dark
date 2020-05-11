@@ -93,7 +93,7 @@ html, body {
 
 /* estilo do chat */
 
-.im_message_text {
+.im_message_text, .composer_rich_textarea {
 	color: var(--color-text) !important;
 }
 .im_message_selected .im_message_outer_wrap, .btn-md:hover {
