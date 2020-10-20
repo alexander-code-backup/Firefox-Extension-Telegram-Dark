@@ -36,6 +36,9 @@ html, body {
 .md-input {
 	color: var(--color-text-shadow) !important;
 }
+.login_form_wrap {
+	box-shadow: inherit !important;
+}
 /* fim estilo da pagina */
 
 /* estilo da lista do menu */
