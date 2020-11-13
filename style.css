@@ -99,7 +99,7 @@ html, body {
 .im_message_text, .composer_rich_textarea {
 	color: var(--color-text) !important;
 }
-.im_message_selected .im_message_outer_wrap, .btn-md:hover {
+.im_message_selected .im_message_outer_wrap, .btn-md:hover, .dropdown-menu .divider {
 	background-color: var(--color-background-dark) !important;
 }
 .im_history_select_active .im_message_outer_wrap:hover, .tg_head_peer_dropdown .dropdown-menu > li > a:hover {
@@ -110,6 +110,16 @@ html, body {
 }
 .tg_head_peer_dropdown .dropdown-menu {
 	max-width: inherit !important;
+}
+.im_message_unread_split {
+    background: var(--color-background-dark) !important;
+    color: var(--color-text) !important;
+}
+.im_edit_panel_border {
+	border-bottom: inherit !important;
+}
+.im_bottom_panel_wrap {
+	border-top: 1px solid var(--color-background-dark);
 }
 /* fim do estilo do chat */
 
@@ -124,5 +134,23 @@ html, body {
 .md_modal_split_action {
 	background: var(--color-background) !important;
 	box-shadow: initial !important;
+}
+.md_modal_iconed_section_wrap {
+	border-bottom: inherit !important;
+}
+i.icon-radio, .tg_radio .icon-radio-outer {
+	border: inherit !important;
+}
+.modal-content .md-input {
+	background: var(--color-background) !important;
+}
+.md-input-group {
+	border-bottom: 1px solid var(--color-background-dark);
+}
+.md-input-focused {
+    border-bottom: 2px solid #6bace1 !important;
+}
+.modal-content, .md_modal_head {
+    border-radius: 15px !important;
 }
 /* fim do estilo de informações de contato ou configurações */
