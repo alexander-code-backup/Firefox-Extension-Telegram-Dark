@@ -83,14 +83,26 @@ html, body {
 .footer_empty {
 	display: none !important;
 }
-.im_dialogs_scrollable_wrap a.im_dialog_searchpeer, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer:hover, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer_selected, .im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected {
+.im_dialogs_scrollable_wrap a.im_dialog_searchpeer, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer:hover, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer_selected, .im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected{
 	background: var(--color-background-shadow) !important;
 }
-.im_dialog_message, a.im_dialog:hover .im_short_message_text, a.im_dialog_selected .im_short_message_text {
+.im_dialog_message, a.im_dialog:hover .im_short_message_text, a.im_dialog_selected .im_short_message_text, .im_message_webpage_description, .im_message_webpage_title > a, .im_message_photo_caption, .im_message_contact_name, .im_message_contact_phone {
 	color: var(--color-text-shadow) !important;
 }
 .im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected {
 	border-radius: 8px;
+}
+.im_message_webpage_wrap {
+	border-radius: 4px;
+}
+.im_message_article_thumb, .im_message_reply_thumb {
+	border-radius: 25% !important;
+}
+.im_message_webpage_article_photo {
+    margin: 5px 5px 5px 5px !important;
+}
+.im_message_document_thumb_wrap {
+	background-color: var(--color-background) !important;
 }
 /* fim estilo da lista de mensagens */
 
@@ -102,10 +114,10 @@ html, body {
 .im_message_selected .im_message_outer_wrap, .btn-md:hover, .dropdown-menu .divider {
 	background-color: var(--color-background-dark) !important;
 }
-.im_history_select_active .im_message_outer_wrap:hover, .tg_head_peer_dropdown .dropdown-menu > li > a:hover {
+.im_history_select_active .im_message_outer_wrap:hover, .tg_head_peer_dropdown .dropdown-menu > li > a:hover, a.composer_emoji_btn:hover {
 	background-color: var(--color-background-shadow) !important;
 }
-.im_record_bg {
+.im_record_bg, .composer_emoji_tooltip {
 	background: var(--color-background) !important;
 }
 .tg_head_peer_dropdown .dropdown-menu {
