@@ -86,7 +86,7 @@ html, body {
 .im_dialogs_scrollable_wrap a.im_dialog_searchpeer, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer:hover, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer_selected, .im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected{
 	background: var(--color-background-shadow) !important;
 }
-.im_dialog_message, a.im_dialog:hover .im_short_message_text, a.im_dialog_selected .im_short_message_text, .im_message_webpage_description, .im_message_webpage_title > a, .im_message_photo_caption, .im_message_contact_name, .im_message_contact_phone {
+.im_dialog_message, a.im_dialog:hover, .im_short_message_text, a.im_dialog_selected .im_short_message_text, .im_message_webpage_description, .im_message_webpage_title > a, .im_message_photo_caption, .im_message_contact_name, .im_message_contact_phone {
 	color: var(--color-text-shadow) !important;
 }
 .im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected {
