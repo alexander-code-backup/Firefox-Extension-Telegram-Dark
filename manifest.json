@@ -1,9 +1,9 @@
 {
-  "description": "Ativar tema escuro no Telegram | Enable dark theme in Telegram",
+  "description": "Tenha uma nova experiência no Telegram | Have a new experience on Telegram",
   "manifest_version": 2,
   "name": "Telegram Dark (Tema Escuro)",
   "author": "Johnendz",
-  "version": "3.3",
+  "version": "3.4",
 
   "content_scripts": [
     {

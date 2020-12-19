@@ -102,7 +102,7 @@ html, body {
     margin: 5px 5px 5px 5px !important;
 }
 .im_message_document_thumb_wrap {
-	background-color: var(--color-background) !important;
+	background-color: var(--color-background-dark) !important;
 }
 /* fim estilo da lista de mensagens */
 
@@ -131,16 +131,25 @@ html, body {
 	border-bottom: inherit !important;
 }
 .im_bottom_panel_wrap {
-	border-top: 1px solid var(--color-background-dark);
+	border-top: 2px solid var(--color-background-dark);
+}
+.im_send_panel_wrap, .im_send_form {
+    max-width: inherit !important;
+}
+.composer_rich_textarea, .composer_textarea {
+	min-height: 25px !important;
+}
+.composer_emoji_insert_btn {
+	margin-top: -2px !important;
 }
 /* fim do estilo do chat */
 
 /* estilo de informações de contato ou configurações */
 
-.md_modal_section_link, .md_modal_section_param_name, .tg_radios_wrap *, .md_modal_section_description.changelog_version_changes {
+.md_modal_section_link, .md_modal_section_param_name, .tg_radios_wrap *, .md_modal_section_description.changelog_version_changes, .sessions_modal_session_device {
 	color: var(--color-text-shadow) !important;
 }
-.md_modal_section_param_value, .tg_checkbox_label, .md_modal_section_link:hover, .confirm_modal_description * {
+.md_modal_section_param_value, .tg_checkbox_label, .md_modal_section_link:hover, .confirm_modal_description *, .md_modal_list_peer_name, .sessions_modal_session_app {
 	color: var(--color-text) !important;
 }
 .md_modal_split_action {
@@ -164,5 +173,8 @@ i.icon-radio, .tg_radio .icon-radio-outer {
 }
 .modal-content, .md_modal_head {
     border-radius: 15px !important;
+}
+.contacts_modal_members_list .active a.contacts_modal_contact, .contacts_modal_members_list .active a.contacts_modal_contact:hover, .contacts_modal_members_list a.contacts_modal_contact:hover {
+	background-color: var(--color-background-shadow) !important;
 }
 /* fim do estilo de informações de contato ou configurações */
