@@ -86,7 +86,7 @@ html, body {
 .im_dialogs_scrollable_wrap a.im_dialog_searchpeer, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer:hover, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer_selected, .im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected{
 	background: var(--color-background-shadow) !important;
 }
-.im_dialog_message, a.im_dialog:hover, .im_short_message_text, a.im_dialog_selected .im_short_message_text, .im_message_webpage_description, .im_message_webpage_title > a, .im_message_photo_caption, .im_message_contact_name, .im_message_contact_phone {
+.im_dialog_message, a.im_dialog:hover, .im_short_message_text, a.im_dialog_selected .im_short_message_text, .im_message_webpage_description, .im_message_webpage_title > a, .im_message_photo_caption, .im_message_contact_name, .im_message_contact_phone, .im_message_document_caption, .im_message_photo_caption, .im_message_video_caption {
 	color: var(--color-text-shadow) !important;
 }
 .im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected {
@@ -133,14 +133,30 @@ html, body {
 .im_bottom_panel_wrap {
 	border-top: 2px solid var(--color-background-dark);
 }
-.im_send_panel_wrap, .im_send_form {
-    max-width: inherit !important;
+.composer_rich_textarea {
+  width: 100% !important;
+  box-shadow: 0px 0px !important;
+  padding-top: 15px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-bottom: 15px !important;
+  background-color: var(--color-background-shadow) !important;
+  max-height: 180px;
 }
-.composer_rich_textarea, .composer_textarea {
-	min-height: 25px !important;
+
+.im_send_field_wrap {
+  border-radius: 24px !important;
 }
-.composer_emoji_insert_btn {
-	margin-top: -2px !important;
+
+.im_send_field_wrap.hasselect > a {
+    margin-top: 13px !important;
+    margin-right: 6px !important;
+}
+.composer_emoji_tooltip {
+    border-radius: 12px !important;
+}
+.audio_player_title {
+    max-width: 200px !important;
 }
 /* fim do estilo do chat */
 
@@ -174,7 +190,7 @@ i.icon-radio, .tg_radio .icon-radio-outer {
 .modal-content, .md_modal_head {
     border-radius: 15px !important;
 }
-.contacts_modal_members_list .active a.contacts_modal_contact, .contacts_modal_members_list .active a.contacts_modal_contact:hover, .contacts_modal_members_list a.contacts_modal_contact:hover {
+.contacts_modal_members_list .active a.contacts_modal_contact, .contacts_modal_members_list .active a.contacts_modal_contact:hover, .contacts_modal_members_list a.contacts_modal_contact:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
 	background-color: var(--color-background-shadow) !important;
 }
 /* fim do estilo de informações de contato ou configurações */
