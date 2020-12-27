@@ -66,6 +66,7 @@ html, body {
 
 .im_dialogs_search_field {
     border-radius: 18px;
+	border: 1px solid transparent !important;
 }
 .dropdown-menu *, .im_dialog_peer {
 	color: var(--color-text) !important;
@@ -141,7 +142,7 @@ html, body {
 	padding-left: 20px !important;
 	padding-right: 20px !important;
 	padding-bottom: 15px !important;
-	background-color: var(--color-background-shadow) !important;
+	background-color: var(--color-background-dark) !important;
 	max-height: 180px;
 }
 
