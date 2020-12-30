@@ -144,6 +144,7 @@ html, body {
 	padding-bottom: 15px !important;
 	background-color: var(--color-background-dark) !important;
 	max-height: 180px;
+	overflow-y: auto !important;
 }
 
 .im_send_field_wrap {
