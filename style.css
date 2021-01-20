@@ -39,6 +39,9 @@ html, body {
 .login_form_wrap {
 	box-shadow: inherit !important;
 }
+.login_try_desktop, .tg_try_desktop {
+	display: none !important;
+}
 /* fim estilo da pagina */
 
 /* estilo da lista do menu */
