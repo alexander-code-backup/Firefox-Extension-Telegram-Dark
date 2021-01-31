@@ -180,7 +180,7 @@ html, body {
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: url("https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png");
+    background-image: url("https://raw.githubusercontent.com/alexander-codec/Firefox-Extension-Telegram-Dark/master/background.svg");
     filter: invert(0.6) opacity(0.15);
 }
 .im_message_outer_wrap, .im_message_outer_wrap:hover {
