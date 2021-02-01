@@ -55,6 +55,73 @@ html, body {
 .stop100 {
     stop-color: #fff;
 }
+.tg_head_logo_dropdown .dropdown-toggle
+  {
+    padding: 17px 10px 15px 28px;
+  }
+
+  .tg_head_logo_dropdown .icon-hamburger-wrap
+  {
+    margin: 0 24px 0 0;
+  }
+
+  .icon-hamburger-wrap
+  {
+    position: absolute;
+    right: 4px;
+  }
+
+  .icon-hamburger-wrap>span
+  {
+    opacity: 0!important;
+  }
+
+  .icon-hamburger-wrap
+  {
+    background: url(https://img.icons8.com/material-outlined/24/000000/forward.png) 50%;
+    opacity: .35;
+  }
+
+  .tg_head_logo_dropdown .dropdown-menu
+  {
+    box-shadow: 0 1px 0 #f5f5f5!important;
+  }
+
+  .tg_head_logo_dropdown.dropdown.open li a
+  {
+    padding-left: 28px;
+  }
+
+  .tg_head_logo_dropdown.dropdown.open li a i
+  {
+    margin-right: 20px;
+}
+
+i.icon.icon-tg-title
+  {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Telegram_alternative_logo.svg/200px-Telegram_alternative_logo.svg.png) 50% no-repeat;
+    margin-top: -5px;
+    margin-left: -20px;
+    margin-left: 0;
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+    margin-bottom: -5px;
+  }
+
+  i.icon.icon-tg-title:before
+  {
+    content: "Telegram";
+    font: 300 15px/26px Roboto;
+    color: #fff;
+    margin-left: 31px;
+}
+.tg_head_logo_wrap, .im_dialogs_col_wrap.noselect {
+    border-right: 2px solid var(--color-background-dark) !important;
+}
+.tg_head_main_wrap {
+    border-bottom: 2px solid var(--color-background-dark) !important;
+}
 /* fim estilo da pagina */
 
 /* estilo da lista do menu */
@@ -81,7 +148,7 @@ html, body {
 /* estilo da lista de mensagens */
 
 .im_dialogs_search_field, .contacts_modal_search_field {
-    border-radius: 18px;
+    border-radius: 8px;
 	border: 1px solid transparent !important;
 }
 .im_dialogs_modal_col_wrap .im_dialogs_search_field {
@@ -99,18 +166,17 @@ a.im_dialog:hover .im_dialog_peer {
 .im_dialogs_col_wrap {
     border-right: 2px solid var(--color-background-dark) !important;
 }
-.im_page_wrap.clearfix {
-	border-top: 2px solid var(--color-background-dark) !important;
-}
-.im_dialogs_scrollable_wrap .active a.im_dialog {
+.im_dialogs_scrollable_wrap .active a.im_dialog, .im_dialogs_scrollable_wrap .active a.im_dialog:hover {
 	background-color: var(--color-background-dark) !important;
-	border-radius: 8px;
 }
 .footer_empty {
 	display: none !important;
 }
-.im_dialogs_scrollable_wrap a.im_dialog_searchpeer, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer:hover, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer_selected, .im_dialogs_scrollable_wrap a.im_dialog:hover, .im_dialogs_scrollable_wrap a.im_dialog_selected{
+.im_dialogs_scrollable_wrap a.im_dialog_searchpeer, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer:hover, .im_dialogs_scrollable_wrap a.im_dialog_searchpeer_selected, .im_dialogs_scrollable_wrap a.im_dialog_selected {
 	background: var(--color-background-shadow) !important;
+}
+.im_dialogs_scrollable_wrap a.im_dialog:hover {
+	background: var(--color-background) !important;
 }
 .im_dialog_message, a.im_dialog:hover, .im_short_message_text, a.im_dialog_selected .im_short_message_text, .im_message_webpage_description, .im_message_photo_caption, .im_message_contact_name, .im_message_contact_phone, .im_message_document_caption, .im_message_photo_caption, .im_message_video_caption {
 	color: var(--color-text-shadow) !important;
@@ -133,6 +199,22 @@ a.im_dialog:hover .im_dialog_peer {
 .im_dialog_wrap a.im_dialog:hover {
     transition: padding-left 0.1s ease-out;
     padding-left: 24px;
+}
+.im_dialogs_panel {
+    padding: 12px 26px;
+}
+.im_dialog_peer {
+    font-size: 15px;
+	padding-right: 10px;
+}
+.im_dialog_message_wrap {
+    overflow: visible;
+}
+.im_dialogs_scrollable_wrap .active a.im_dialog {
+    margin-right: -1px;
+}
+.im_dialog_message {
+    padding-right: 20px;
 }
 /* fim estilo da lista de mensagens */
 

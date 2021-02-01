@@ -3,12 +3,12 @@
   "manifest_version": 2,
   "name": "Telegram Dark (Tema Escuro)",
   "author": "Johnendz",
-  "version": "4.4",
+  "version": "4.5",
 
   "content_scripts": [
     {
       "matches": ["*://web.telegram.org/*"],
-      "css":["style.minified.css"],
+      "css":["style.css"],
       "run_at": "document_start"
     }
   ],
