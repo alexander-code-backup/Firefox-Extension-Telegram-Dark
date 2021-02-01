@@ -8,7 +8,7 @@
   "content_scripts": [
     {
       "matches": ["*://web.telegram.org/*"],
-      "css":["style.css"],
+      "css":["style.minified.css"],
       "run_at": "document_start"
     }
   ],

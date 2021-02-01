@@ -76,16 +76,14 @@ html, body {
     opacity: 0!important;
   }
 
-  .icon-hamburger-wrap
-  {
-    background: url(https://img.icons8.com/material-outlined/24/000000/forward.png) 50%;
+.tg_head_logo_dropdown .icon-hamburger-wrap {
+    background: url(https://github.com/alexander-codec/Firefox-Extension-Telegram-Dark/raw/master/icons/down.png) 50%;
+	transition: background 0.1s ease-out;
     opacity: .35;
-  }
-
-  .tg_head_logo_dropdown .dropdown-menu
-  {
-    box-shadow: 0 1px 0 #f5f5f5!important;
-  }
+}
+.tg_head_logo_dropdown.open .icon-hamburger-wrap {
+    background: url(https://github.com/alexander-codec/Firefox-Extension-Telegram-Dark/raw/master/icons/up.png) 50% !important;
+}
 
   .tg_head_logo_dropdown.dropdown.open li a
   {
