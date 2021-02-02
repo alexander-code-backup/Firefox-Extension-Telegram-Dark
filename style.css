@@ -335,7 +335,6 @@ a.im_message_from_photo {
     background-color: var(--color-background-dark) !important;
     margin-left: 10px;
     margin-right: 15px;
-    max-width: 550px !important;
 }
 .im_history_message_wrap.im_message_selected > .im_message_outer_wrap.hasselect > div > div > .im_message_body.im_message_body_media {
     filter: grayscale(1);
@@ -407,7 +406,6 @@ a.im_message_from_photo {
 .im_message_in .im_message_body {
     background-color: var(--color-background-dark) !important;
     border-top-left-radius: 4px;
-    max-width: 750px !important;
 }
 .im_history_messages:not(.im_history_messages_group) .im_history_messages_peer .im_history_message_wrap .im_message_outer_wrap .im_message_wrap .im_message_out .im_message_body .im_message_author_wrap {
   transition: 0.1s ease-in;
@@ -693,11 +691,11 @@ img.im_message_document_thumb {
 }
 .im_send_reply_wrap {
     background-color: var(--color-background-dark) !important;
-    border-radius: 5px;
-    padding: 8px 4px !important;
+    border-radius: 25px;
+    padding: 6px 16px !important;
 }
-.im_history_selectable .im_message_outer_wrap {
-    cursor: inherit;
+.im_send_reply_cancel {
+    margin-top: 10px;
 }
 a.im_record.pull-left, span.im_submit_send_label:before, a.pull-left.im_panel_own_photo.peer_photo_init {
     display: none;
@@ -729,11 +727,19 @@ a.im_record.pull-left, span.im_submit_send_label:before, a.pull-left.im_panel_ow
     right: 80px;
     top: 0px;
 	margin-top: 11px !important;
-	margin-right: 6px !important;
+	margin-right: -10px !important;
+}
+.im_send_reply_form_wrap .im_send_buttons_wrap {
+	position: absolute;
+    max-width: 190px;
+    right: 80px;
+    top: 0px;
+	margin-top: 72px !important;
+	margin-right: -10px !important;
 }
 button.btn.btn-md.im_submit.im_submit_send, button.btn.btn-md.im_submit.im_submit_edit {
     margin-top: -5px;
-    right: -75px;
+    right: -60px;
     background: #28a6e1 url(https://www.materialui.co/materialIcons/navigation/chevron_right_white_24x24.png) 55% 50% no-repeat;
     font-size: 0;
     width: 20px;
@@ -746,7 +752,7 @@ button.btn.btn-md.im_submit.im_submit_send:hover, button.btn.btn-md.im_submit.im
     background: #209bd5 url(https://www.materialui.co/materialIcons/navigation/chevron_right_white_24x24.png) 55% 50% no-repeat;
 }
 .im_attach, .im_media_attach, a.im_record.pull-left, .im_record_bg{
-    margin-right: 18px;
+    margin-right: 10px;
     opacity: 0.77;
 }
 i.icon.icon-slash{
@@ -767,6 +773,36 @@ i.icon.icon-slash{
 .im_message_keyboard{
     margin-top: 9px;
     margin-bottom: 5px;
+}
+.composer_rich_textarea:before {
+	content: '';
+	float: right;
+	width: 240px;
+	height: 1em;
+}
+.composer_rich_textarea:empty::before {
+    float: inherit;
+	width: inherit;
+	height: inherit;
+}
+.im_edit_panel_border {
+    margin-bottom: 10px;
+}
+.im_edit_panel_wrap {
+    padding-bottom: 10px;
+}
+a.btn.btn-primary, a.btn.btn-md.btn-md-primary.im_edit_cancel_link {
+    text-transform: capitalize;
+    background: var(--color-background-dark) !important;
+    color: var(--color-text-shadow) !important;
+    border-radius: 6px;
+}
+a.btn.btn-md.btn-md-primary.im_edit_cancel_link, .im_edit_delete_btn, .im_edit_forward_btn, .im_edit_reply_btn, .im_start_btn {
+    font-size: 15px;
+    height: 32px;
+}
+.im_selected_count {
+    color: var(--color-text-shadow) !important;
 }
 /* fim do estilo do chat */
 
