@@ -5,6 +5,7 @@
     --color-text: #efefef;
     --color-text-shadow: #b3b3b3;
     --color-icon: #919191;
+	--background: #919191;
 }
 
 * {
@@ -108,6 +109,28 @@ i.icon.icon-tg-title:before {
 }
 .im_page_wrap {
     box-shadow: inherit;
+}
+.im_history_not_selected::before {
+    display: block;
+    content: "Have up to 33 different backgrounds" " \A ";
+    white-space: pre-wrap;
+    border-bottom: 1px solid #333943;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding: 0px 20% 16px 20%;
+    color: #676764;
+    user-select: auto !important;
+}
+.im_history_not_selected::after {
+    display: block;
+    content: "Install Telegram Background from Firefox Addons." '\A';
+    white-space: pre-wrap;
+    border-top: 1px solid #333943;
+    font-size: 11px;
+    margin-top: 16px;
+    padding-top: 16px;
+    color: #676764;
+    user-select: auto !important;
 }
 /* fim estilo da pagina */
 
@@ -270,15 +293,8 @@ i.icon.icon-tg-title:before {
     max-width: 200px !important;
 }
 
-.im_history_wrap::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image: url("https://raw.githubusercontent.com/alexander-codec/Firefox-Extension-Telegram-Dark/master/backgrounds/pattern-2.svg");
-    filter: invert(0.6) opacity(0.15);
+.im_history_wrap {
+    background-image: url("https://raw.githubusercontent.com/alexander-codec/Firefox-Extension-Telegram-Background/main/backgrounds/pattern-2.svg");
 }
 .im_message_outer_wrap, .im_message_outer_wrap:hover {
     background: none !important;
@@ -802,13 +818,13 @@ i.icon.icon-slash{
 	width: inherit;
 	height: inherit;
 }
-.im_edit_panel_border {
+.im_edit_panel_border, .im_edit_small_panel_wrap .im_edit_panel_border {
     margin-bottom: 0px;
 }
 .im_edit_panel_wrap {
     padding-bottom: 10px;
 }
-a.btn.btn-primary, a.btn.btn-md.btn-md-primary.im_edit_cancel_link {
+a.btn.btn-primary, a.btn.btn-md.btn-md-primary.im_edit_cancel_link, .im_start_btn {
     text-transform: capitalize;
     background: var(--color-background-dark) !important;
     color: var(--color-text-shadow) !important;
