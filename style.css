@@ -40,7 +40,7 @@ html, body {
 .login_form_wrap {
 	box-shadow: inherit !important;
 }
-.login_try_desktop, .tg_try_desktop {
+.login_try_desktop, .tg_try_desktop, .login_head_logo_link .icon-tg-logo {
 	display: none !important;
 }
 .progress-arc-wrap {
@@ -67,7 +67,7 @@ html, body {
     right: 4px;
 }
 .icon-hamburger-wrap>span {
-    opacity: 0!important;
+    opacity: 0 !important;
 }
 
 .tg_head_logo_dropdown .icon-hamburger-wrap {
@@ -110,39 +110,23 @@ i.icon.icon-tg-title:before {
 .im_page_wrap {
     box-shadow: inherit;
 }
-.im_history_not_selected::before {
-    display: block;
-    content: "Have up to 33 different backgrounds" " \A ";
-    white-space: pre-wrap;
-    border-bottom: 1px solid #333943;
-    font-size: 16px;
-    margin-bottom: 16px;
-    padding: 0px 20% 16px 20%;
-    color: #676764;
-    user-select: auto !important;
-}
-.im_history_not_selected::after {
-    display: block;
-    content: "Install Telegram Background from Firefox Addons." '\A';
-    white-space: pre-wrap;
-    border-top: 1px solid #333943;
-    font-size: 11px;
-    margin-top: 16px;
-    padding-top: 16px;
-    color: #676764;
-    user-select: auto !important;
-}
 /* fim estilo da pagina */
 
 /* estilo da lista do menu */
 
-.dropdown.open .tg_head_btn, .tg_head_btn:hover, .dropdown-menu, .modal-content, .md_modal_head, .md_modal_section_splitter {
+.dropdown.open .tg_head_btn, .tg_head_btn:hover, .dropdown-menu, .modal-content, .md_modal_head {
     background-color: var(--color-background) !important;
 }
 .tg_head_logo_dropdown .dropdown-menu {
     border: inherit !important;
     border-left-color: inherit !important;
     border-right-color: inherit !important;
+}
+.md_modal_section_splitter {
+	background: var(--color-background) !important;
+	border: inherit !important;
+	box-shadow: inherit !important;
+	min-height: 0px;
 }
 .tg_head_logo_dropdown .dropdown-menu > li > a:hover {
 	background-color: var(--color-background-shadow) !important;
@@ -320,20 +304,10 @@ i.icon.icon-tg-title:before {
 a.im_message_from_photo {
     margin-top: -10px;
 }
-
-.im_content_message_wrap.im_message_out .im_message_meta {
-    transform: translateX(25px);
-}
-.im_content_message_wrap .im_message_meta {
-    opacity: 0;
-    transform: scaleX(0);
-    transition: 0.1s ease-in;
-}
 .im_message_meta, .historyMessage {
     display: flex;
 }
 .im_message_meta {
-    order: 2;
     height: 100%;
 }
 .im_message_date, .im_message_fwd_date {
@@ -782,7 +756,9 @@ button.btn.btn-md.im_submit.im_submit_send, button.btn.btn-md.im_submit.im_submi
     position: absolute;
 }
 button.btn.btn-md.im_submit.im_submit_send:hover, button.btn.btn-md.im_submit.im_submit_edit:hover {
-    background: #209bd5 url(https://www.materialui.co/materialIcons/navigation/chevron_right_white_24x24.png) 55% 50% no-repeat;
+    background-image: url(https://www.materialui.co/materialIcons/navigation/chevron_right_white_24x24.png) 55% 50% no-repeat;
+	background-color: #209bd5 !important;
+	opacity: 0.7;
 }
 .im_attach, .im_media_attach, a.im_record.pull-left, .im_record_bg{
     margin-right: 10px;
