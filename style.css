@@ -276,7 +276,9 @@ i.icon.icon-tg-title:before {
 .audio_player_title {
     max-width: 200px !important;
 }
-
+.im_grouped_short .im_message_body, .im_grouped .im_message_body, .im_grouped_fwd .im_message_body, .im_grouped_fwd_short .im_message_body {
+    margin-left: 0px;
+}
 .im_history_wrap {
     background-image: url("https://raw.githubusercontent.com/alexander-codec/Firefox-Extension-Telegram-Background/main/backgrounds/pattern-2.svg");
 }
@@ -294,12 +296,8 @@ i.icon.icon-tg-title:before {
     flex-direction: row-reverse;
     display: flex;
 }
-.im_dialog_wrap.active, .im_dialog_wrap, .tg_head_peer_info, .im_content_message_wrap, .composer_rich_textarea {
-    filter: blur(0);
-    transition: 1s;
-}
 .im_message_out a.im_message_from_photo {
-    visibility: hidden;
+    display: none;
 }
 a.im_message_from_photo {
     margin-top: -10px;
@@ -309,6 +307,7 @@ a.im_message_from_photo {
 }
 .im_message_meta {
     height: 100%;
+	margin-right: 30px;
 }
 .im_message_date, .im_message_fwd_date {
     padding: 1px 4px;
@@ -326,9 +325,6 @@ a.im_message_from_photo {
 .im_grouped_short .im_message_outer_wrap .im_message_out .im_message_body::before, .im_grouped_short .im_message_outer_wrap .im_message_in .im_message_body::before {
     display: none;
     visibility: hidden;
-}
-.im_history_message_wrap.im_grouped .im_message_out .im_message_body, .im_grouped_short .im_message_outer_wrap .im_message_out .im_message_body {
-    margin-right: 70px;
 }
 .im_grouped .im_message_outer_wrap .im_message_out .im_message_body, .im_grouped .im_message_outer_wrap .im_message_in .im_message_body, .im_grouped_short .im_message_outer_wrap .im_message_out .im_message_body, .im_grouped_short .im_message_outer_wrap .im_message_in .im_message_body {
     border-radius: 10px !important;
@@ -399,7 +395,7 @@ div.im_message_body {
     display: unset;
 }
 .im_message_in a.im_message_from_photo, .im_message_fwd_photo {
-    visibility: hidden;
+    display: none;
 }
 .im_message_fwd .im_message_fwd_author_wrap, .im_message_fwd .im_message_text, .im_message_fwd .im_message_media, .im_message_fwd .im_message_sign {
     margin-left: 0px;
@@ -814,7 +810,6 @@ a.btn.btn-md.btn-md-primary.im_edit_cancel_link, .im_edit_delete_btn, .im_edit_f
     color: var(--color-text-shadow) !important;
 }
 .im_message_selected .im_message_body {
-    filter: grayscale(1);
 	color: gray;
 }
 .im_message_selected .im_message_body .im_message_text {
